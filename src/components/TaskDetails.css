@@ -1,0 +1,19 @@
+.task-details-container{
+  background-color: #444;
+  margin: 15px 0px;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  color: #eee;
+  border-radius: 5px;
+}
+
+.task-details-container{
+  margin-bottom: 5px;
+  color: chartreuse;
+}
+
+.back-button-container{
+  width: 30%;
+  margin-top: 10px;
+}
