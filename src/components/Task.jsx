@@ -1,10 +1,10 @@
 import React from 'react';
-import {CgClose, CgInfo} from 'react-icons/cg'
+import {CgClose, CgInfo, CgPen} from 'react-icons/cg'
 import './Task.css'
 import {useHistory} from 'react-router-dom'
 
 
-const Task = ({task, handleTaskClick, handleTaskRemove}) => {
+const Task = ({task, handleTaskClick, handleTaskRemove, showDropdown}) => {
 
 const history = useHistory()
 
@@ -21,6 +21,9 @@ const handleTaskDetails = () => {
        <div className="buttons-container">
          <button onClick={() => handleTaskRemove(task.id)} className="remove-task-button">
            <CgClose/>
+         </button>
+         <button onClick={showDropdown} className="remove-task-button">
+           <CgPen/>
          </button>
          <button onClick={handleTaskDetails} className="see-task-details-button">
            <CgInfo/>
